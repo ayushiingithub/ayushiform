@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!---======== CSS ========-->
+        <link rel="stylesheet" href="style.css">
+
+        <!---======== Iconsout CSS ========-->
+        <link rel="stylesheet" href="https://unicons.iconsout.com/release/v4.0.0/css/line.css">
+
+
+        <title>HTML Form</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <header>Form</header>
+            <br>
+
+            <form action="#">
+                <div class="form first">
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Age   </label>
+                            <input type="number" placeholder= "Enter your age" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Weight </label>
+                            <input type="number" placeholder="Enter your weight" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email Id</label>
+                            <input type="text" placeholder="Enter your Email Id" required>
+                        </div>
+
+                        <div class="second-field">
+                            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                                <label for="pdfFile">Health Report   </label>
+                                <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf">
+                            </form>
+                            
+                        </div>
+                        <button class="Submit">
+                            <span class="btnText">Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
